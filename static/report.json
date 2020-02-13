@@ -1,0 +1,12 @@
+{
+    "reports": [
+        {
+            "name": "Entry 1",
+            "url": "https://datastudio.google.com/embed/reporting/..."
+        },
+        {
+            "name": "Entry 2",
+            "url": "https://datastudio.google.com/embed/reporting/..."
+        }
+    ]
+}

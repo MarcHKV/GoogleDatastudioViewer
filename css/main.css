@@ -1,0 +1,131 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700";
+
+html{
+    overflow:hidden;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #fafafa;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    perspective: 1500px;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #fafafa;
+    color: #fff;
+    transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+    transform-origin: bottom left;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+    transform: rotateY(100deg);
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #00a4e4;
+}
+
+.sidebar-headertext{
+    font-size: 1.25rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+    color: white;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: 0.00938em;
+    color: rgba(0, 0, 0, 0.87);
+}
+#sidebar ul li a:hover {
+    color: #00a4e4;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#content {
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+    transition: all 0.3s;
+}
+
+#sidebarCollapse {
+    margin: 8px;
+    position: absolute;
+    z-index: 999;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #ccc;
+    color: #FFFFFF;
+    background-color: #00a4e4;
+    border-radius: 100%;
+}
+
+.iframe_content{
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+        transform: rotateY(90deg);
+    }
+    #sidebar.active {
+        margin-left: 0;
+        transform: none;
+    }
+    #sidebarCollapse span:first-of-type,
+    #sidebarCollapse span:nth-of-type(2),
+    #sidebarCollapse span:last-of-type {
+        transform: none;
+        opacity: 1;
+        margin: 5px auto;
+    }
+    #sidebarCollapse.active span {
+        margin: 0 auto;
+    }
+    #sidebarCollapse.active span:first-of-type {
+        transform: rotate(45deg) translate(2px, 2px);
+    }
+    #sidebarCollapse.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+    #sidebarCollapse.active span:last-of-type {
+        transform: rotate(-45deg) translate(1px, -1px);
+    }
+}

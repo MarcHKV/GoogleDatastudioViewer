@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>GoogleDataStudio Viewer</title>
+    <meta name="description" content="Easily view reports created with Google Datastudio">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" href="./static/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-headertext">GoogleDatastudio Viewer</div>
+            </div>
+            <ul id="sidebar-content" class="list-unstyled components">
+            </ul>
+        </nav>
+
+        <!-- Page Content -->
+        <div id="content">
+            <button type="button" id="sidebarCollapse">
+                <i id="sidebarCollapse_icon"></i>
+            </button>
+            <iframe class="iframe_content" id="report-content"></iframe>
+        </div>
+    </div>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/7a55a841d4.js"></script>
+
+    <!-- Bootstrap, Popper and Jquery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
