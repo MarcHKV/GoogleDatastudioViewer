@@ -1,5 +1,6 @@
 # GoogleDatastudioViewer
 ##### A simple interface to easily view Reports generated with Google Data Studio
+##### A.K.A; an iframe loader
 
 ![sonice.gif](https://i.imgur.com/xaQyqqi.gif)
 
